@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-function App() {
+const Routers: React.FC = () => {
   return (
     <div className="App">
    
@@ -9,4 +9,4 @@ function App() {
   );
 }
 
-export default App;
+export default Routers;
