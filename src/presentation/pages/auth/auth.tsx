@@ -16,7 +16,6 @@ const Auth: React.FC = () => {
                 sx={{
                     display: 'flex',
                     justifyContent: "center",
-
                     flexDirection: 'column',
                     maxWidth: '400px',
                     padding: '40px',
