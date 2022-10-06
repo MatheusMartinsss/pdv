@@ -1,9 +1,9 @@
 import React from 'react'
-import { AppBar, Toolbar, IconButton, Typography } from '@mui/material'
+import {  Toolbar, IconButton, Typography } from '@mui/material'
 import { styled } from '@mui/material/styles';
 import MenuIcon from '@mui/icons-material/Menu';
 import MuiAppBar, { AppBarProps as MuiAppBarProps } from '@mui/material/AppBar';
-type Header = {
+type THeader = {
     handleDrawerOpen: () => void
     open: boolean
     drawerWidth: number
@@ -11,7 +11,7 @@ type Header = {
 interface AppBarProps extends MuiAppBarProps {
     open?: boolean;
 }
-const Header: React.FC<Header> = ({ handleDrawerOpen, open, drawerWidth }) => {
+const Header: React.FC<THeader> = ({ handleDrawerOpen, open, drawerWidth }) => {
     const AppBar = styled(MuiAppBar, {
         shouldForwardProp: (prop) => prop !== 'open',
     })<AppBarProps>(({ theme, open }) => ({

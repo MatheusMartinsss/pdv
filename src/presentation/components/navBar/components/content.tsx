@@ -1,13 +1,13 @@
 import React from 'react'
 import { styled} from '@mui/material/styles';
 
-type Content = {
+type TContent = {
     drawerWidth: number
     open: boolean
     children: React.ReactNode
 }
 
-const Content: React.FC<Content> = ({ drawerWidth, open, children }) => {
+const Content: React.FC<TContent> = ({ drawerWidth, open, children }) => {
     const Main = styled('main', { shouldForwardProp: (prop) => prop !== 'open' })<{
         open?: boolean;
     }>(({ theme, open }) => ({
